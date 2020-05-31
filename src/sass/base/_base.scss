@@ -1,0 +1,179 @@
+/*
+|--------------------------------------------------------------------------
+| Base/General
+|--------------------------------------------------------------------------
+*/
+
+@charset 'utf-8';
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+}
+
+html {
+  font-family: $font-main, Helvetica, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+body{
+	background-color: $color-bg;
+	font-family: $font-main;
+	color: $color-text;
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+
+  &--full{
+    left: 20%;
+    padding: 0 2%;
+    width: 80%;
+    position: relative;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Tipografia
+|--------------------------------------------------------------------------
+*/
+
+p{
+  margin: 0 0 10px 0;
+}
+
+em{
+  font-family: $font-light;
+  font-style: italic;
+}
+
+hr{
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0;
+  height: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+textarea{
+  padding-top:5px;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b{
+  font-family: $font-bold;
+  font-weight: bold;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Links
+|--------------------------------------------------------------------------
+*/
+
+a{
+  color: $color-link;
+  text-decoration: none;
+  outline: 0;
+  background: transparent;
+
+    &:hover   { color: lighten($color-link, 15%); }
+    &:visited { color: lighten($color-link, 5%);  }
+    &:active  { color: lighten($color-link, 5%);  }
+
+}
+
+/*
+|--------------------------------------------------------------------------
+| Imagem
+|--------------------------------------------------------------------------
+*/
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Tabela
+|--------------------------------------------------------------------------
+*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Botões
+|--------------------------------------------------------------------------
+*/
+
+button,
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Seleção
+|--------------------------------------------------------------------------
+*/
+
+::selection{
+  background: $selection-bg;
+  color:$selection-color;
+}
+
+::-moz-selection{
+  background: $selection-bg;
+  color:$selection-color;
+}
+
+img::selection      { background: transparent; }
+img::-moz-selection { background: transparent; }
+
+/*
+|--------------------------------------------------------------------------
+| Scroll Bar
+|--------------------------------------------------------------------------
+*/
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $green;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($green, 20%);
+}

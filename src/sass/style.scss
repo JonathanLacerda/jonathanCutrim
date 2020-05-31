@@ -1,0 +1,21 @@
+/*
+|--------------------------------------------------------------------------
+| Imports
+|--------------------------------------------------------------------------
+*/
+
+// BASE
+@import "base/config";
+@import "base/base";
+@import "base/helpers";
+@import "source/animate";
+
+// COMPONENTS
+
+@import "modules/components/aside";
+@import "modules/components/logo";
+@import "modules/components/screen";
+@import "modules/components/title";
+@import "modules/components/fullText";
+@import "modules/components/jobs";
+@import "modules/components/about";

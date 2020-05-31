@@ -1,0 +1,37 @@
+/*
+|--------------------------------------------------------------------------
+| Title
+|--------------------------------------------------------------------------
+*/
+
+.title{
+    @include rem(font-size, 48px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    left: -8%;
+
+    .title__container{
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
+
+    .title__text{
+        display: inline-block;
+        font-weight: normal;
+    }
+
+    .title__svg{
+        position: absolute;
+        left: -30px;
+        bottom: -10px;
+        z-index: -1;
+        width: 115%;
+
+        rect{
+            width: 200%;
+        }
+    }
+}

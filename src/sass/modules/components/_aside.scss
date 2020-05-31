@@ -1,0 +1,21 @@
+/*
+|--------------------------------------------------------------------------
+| Aside
+|--------------------------------------------------------------------------
+*/
+
+// Aside
+
+.aside{
+    @include rem(padding-top, 30px);
+    background-color: darken($color-bg, 5%);
+    border-right: 1px solid $black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    z-index: 9;
+    left: 0;
+    text-align: center;
+}

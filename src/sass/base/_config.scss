@@ -1,0 +1,78 @@
+/*
+|--------------------------------------------------------------------------
+| Paths
+|--------------------------------------------------------------------------
+*/
+
+$path-image:  '../images';
+$path-font:   '../fonts';
+
+/*
+|--------------------------------------------------------------------------
+| Main Container Width
+|--------------------------------------------------------------------------
+*/
+
+$main-width:  1170px;
+
+/*
+|--------------------------------------------------------------------------
+| Colors
+|--------------------------------------------------------------------------
+*/
+
+// Colors styleguide:
+
+$pink:               #F80088;
+$green:              #00C2AF;
+$black:              #000;
+$white:              #fff;
+$grey:               #ccc;
+
+// Background
+
+$color_bg:			 #EEF3F8;
+
+// Texts and Links
+
+$color-text:		 $black;
+$color-title:		 $color-text;
+$color-link: 		 $color-text;
+
+// Selection
+
+$selection-bg: 	 	 $green;
+$selection-color:    #555555;
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Fonts
+|--------------------------------------------------------------------------
+*/
+
+$font-main : 	  'Roboto Mono';
+$font-regular:    'Roboto Mono';
+$font-bold: 	  'Roboto Mono';
+$font-light: 	  'Roboto Mono';
+
+/*
+|--------------------------------------------------------------------------
+| Media Queries
+|--------------------------------------------------------------------------
+*/
+
+// Usage example:  @media #{$media-tablet}
+
+
+$media-ultra: 		    "only screen and (min-width: 1440px)";
+$media-desk: 		    "only screen and (min-width: 1170px)";
+$media-tablet-lg: 	    "only screen and (min-width: 960px)";
+$media-tablet: 		    "only screen and (min-width: 770px)";
+$media-mobile-lg: 	    "only screen and (min-width: 640px)";
+$media-mobile: 		    "only screen and (min-width: 480px)";
+
+

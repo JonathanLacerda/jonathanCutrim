@@ -1,0 +1,76 @@
+
+/*
+|--------------------------------------------------------------------------
+| Logo
+|--------------------------------------------------------------------------
+*/
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-42%) scale(0.7);
+
+    @media #{$media-ultra} {
+        transform: translatex(-38%) scale(1);
+    }
+}
+
+.draw{
+    fill: #000;
+    stroke: #000;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 400;
+    opacity: 1;
+    animation: drawning 3.5s cubic-bezier(.34,.63,.42,.39);
+    position: relative;
+}
+
+@keyframes drawning{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 400;
+    }
+    45%{
+        opacity: 1;
+        fill: none;
+        stroke-dashoffset: 400;
+    }
+
+    95%{
+        fill: rgba(0,0,0,0);
+    }
+
+    100%{
+        opacity: 1;
+        fill: rgba(0,0,0,1);
+        stroke-dashoffset: 0;
+    }
+}
+
+.logo__container{
+    position: relative;
+}
+
+.logo__name{
+    position: relative;
+}
+
+.logo__bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.logo__retangule_02{
+    position: relative;
+    top: -24px;
+}
+
+.logo__dev{
+    position: absolute;
+    right: -4px;
+    bottom: 48px;
+    animation-delay: 4s;
+}

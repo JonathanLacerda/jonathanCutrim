@@ -1,0 +1,17 @@
+/*
+|--------------------------------------------------------------------------
+| About
+|--------------------------------------------------------------------------
+*/
+
+.about__container{
+    @include rem(padding, 60px);
+    width: 100%;
+    position: relative;
+}
+
+.about__text{
+    @include rem(font-size, 36px);
+    @include rem(line-height, 50px);
+    letter-spacing: 0.04em;
+}
