@@ -10,13 +10,10 @@
 <body>
 	<div class="container--full">
 		<aside class="aside">
-			<div class="menu">
-
-			</div>
 			<div class="logo">
 				<div class="logo__container">
 					<div class="logo__name">
-						<svg width="274" height="150" viewBox="0 0 274 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg width="274" height="150" viewBox="0 0 274 150" fill="none">
 							<rect class="logo__retangule_01 animated bounceInLeft" x="9.71948" width="245.35" height="71.9106" transform="rotate(2.96489 9.71948 0)" fill="#F80088"/>
 							<g transform="rotate(-5 50 100) translate(5 10)">
 								<rect class="logo__retangule_02 animated bounceInRight" y="65.7263" width="211" height="45" transform="matrix(0.996426 -0.0844706 0.0576452 0.998337 0 75.7263)" fill="#00C2AF"/>
@@ -29,6 +26,101 @@
 						</svg>
 					</div>
 				</div>
+			</div>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="">
+							<svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+								<rect x="7" y="6" width="76" height="78" fill="black"/>
+								<rect x="21" y="21" width="46" height="43" fill="#00C2AF"/>
+								<rect width="90" height="90" fill="url(#pattern0)"/>
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0" transform="scale(0.0111111)"/>
+									</pattern>
+									<image id="image0" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+								<rect x="8" y="8" width="76" height="78" fill="black"/>
+								<rect x="21" y="19" width="54" height="55" fill="#F80088"/>
+								<rect width="90" height="90" fill="url(#pattern1)"/>
+								<defs>
+									<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image1" transform="scale(0.0111111)"/>
+									</pattern>
+									<image id="image1" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADOklEQVR4nO2cvWsUQRiHn4sfFyGCEj8xjQQbwTaIBBTBRmwstBErERE/Av4BIjaC5E/QSgzYWFkJamcMiNFCBQsbRUHxI8kREqKexRg5g7c7M7czt7P3e2CKJPO+987DZva9vd0DIYQQQgghhBBCCAHQD4wBU0ADaFZ0NIAnwEWgXog5B4aAF56Fpzye/1l7FPrpTcmtsqMc2WNdWFzZxoWOLVow1aXFlWlMukqruQYAc8CAR1yVaADrXQJ8RDc9YqqIk7u+UFWIf5HoSEh0JCQ6ErFEfwGuAKPAbuAwcAv4Gen1k8S153wKbG2T6yCmXex2X+wzguNSzDdgW06+E445yzKC41LMNYt8NeC1Y94yDCdC79EPLeY0LeclTWjRs5bzZoJWUQJCix62nLcraBWJ4rKP3bPIN4g58ru95yZ9MmwCxzNy1YAJj5xlGMFxLWgR82HB6hV5tgB3PPKVZTgR8zLpB+ARprfeiXmzss4zVxlwcqfr0f7oenQZWblvVoVF4CMwj+lqNtPlgyqG6OtkbzcbgDP/+f19YDojbgA41/LzLHATc4J9Biy1/K0Pcz/GfuAkcCi36hLgenZelZNvuE3c2Zy47S1zJ4BNDmsYBd56rKXU7V1o0Zd9FoHZTl7m1F6Y6NRPhneBq56xn4GjmH08OCmLngFOd5jjDXCjgFpySVn0PPC1gDzjwI8C8mSSsuiieIfpUoJSpT56ENiL6T4+Ye6P+24Z+wAYCVSXN2XpOpZZg/n3X1gRPwucssxxzHFNPdXeLTOe8dq/gH0WOUY81uVE6nv0DswjD+2oAZcs8rwvppz2pC76CGbryOKARZ65zkvJJnXReyzmDAIbc+YsFFBLJqmLzhO4TN6N80uY/TwYvSLa5pOcoJ1E6qJtn47K28eDk7roZJDoSEh0JCQ6EhIdCYmOhERHQqIjIdGRkOhISHQkJDoSEh0J3R/tj+6PLiMSHQmJjoRER0KiI+EjulF4Felh+4z7X3xEv/KIqRrODnxE3/aIqRpRHNQxX4TayYM2KY9pYG3HFi0ZojdlT2NurIxKHfOts5Ok+wVUNmMOeAycJ+KRLIQQQgghhBBCCFFmfgOM5xQSCbY6TwAAAABJRU5ErkJggg=="/>
+								</defs>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect x="7" y="6" width="76" height="78" fill="black"/>
+								<rect x="25" y="13" width="37" height="63" fill="#00C2AF"/>
+								<rect width="90" height="90" fill="url(#pattern2)"/>
+								<rect x="17" y="9" width="19" height="11" fill="black"/>
+								<path d="M32.5 79L26 75L27.5 71" stroke="black"/>
+								<path d="M25 77.5L27 75.5L26 72.5L22 74.5L25 77.5Z" stroke="black"/>
+								<rect x="21" y="74" width="7" height="4" fill="black"/>
+								<rect x="39" y="74" width="9" height="1" fill="#00C2AF"/>
+								<defs>
+								<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use xlink:href="#image2" transform="scale(0.0111111)"/>
+								</pattern>
+								<image id="image2" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFAUlEQVR4nO2dTWxVRRTHf9hKH7RiERegGEGgmmCQsCAx1mgqGnegiR+Rj5XoAhMgpHsSNyZsTBMWLNyoiUsTXWgk6kKNxuBHdaFgoi4UFKR9VZA2eR8szq2Spo+euXfOzH2380tOupk798w/590798yZKSQSiUQikUgkEolESVkS24F56AG2AVuAu4Eh4C6gH1iZ/QW4DExmf38GTgNngHHgG6AZ1OsuYS1wCHgXmALaBa0OvAMcBG4POI5SsgzYC5xEoq+ouJ2sAXwA7AFqQUZWEgaQSPsdO3E72XngKHCz9SBjciMwClwkvMBz7SJwJPOpUjwIfE98gefaj8AOw3EHowYcB1rEF7WTtYAxoM9IA3PWAV8QX0itfQVstBDCkh34maaFtjowYqCHCU8AV4gvWl6bAZ7xropnXsB2ThzKmsB+z9p4YxfycRBbJJ9iP+1VIQ+MANPEF8e3zQCPedSpEJvozhef1urABm9q5aQPmRbFFsPaThF5nn18HqdC2ATwOvA8sBXJ0C3PfFoJ3IKkVjcDjwNvebjnmA/B8vAQ4b/4JpB8yU2Ovo56uHcLGHa8b2F6kQR7SJFPA/fk9NeH0G0kX5MrEXVDTscPIysgofgJ2I4kgWJyL/BSqJsNAH8RLpKnkaWtIviK6HY29gFXB/JE9AFgVY7r8nIC+Drg/RZiFfCi9U1qwFnCRXMLWaAtis+IbgPnkKU4Na4R/RSwxvGaInyKvATLxmrgSZcLXIXe59i+KJ8Fvp8Le6w6Xkv4zNxOpW/3A+8j8+xQvjUw+nUfCjiIWdus8Gsr8fLf6qmey6PjEYe2vqgr2owSr17DuyY9SPlV6IiZzV9cjx8i+DVrk5k2C6KN6G3AoLKtT/5VtFlt7kVnBpFH14JohQ75ue1KjAC4FpU2WqF9fDRUlSFNoyR0cVTaaIVel9+PyrNe00grtEX15RKF+ernNZ+Oz0GljVZo1xWNsmFZ6qXSRiu0c/61ZGwy7Nur0N3McsJmHOdFK/QlUy9s2Yjtpqh/NI20Qqs6KymWjw3wLPRUAUdiY11lpNJGK/Sv+f2IjnVE/6JppBW6jMtJWqyr+FXa9PrszJG2oo3mJabpxxKVNtqI/q6AI1VHpY122tODFI6ETkmWPaLrwK0o9p1rI7oJfFLEo4ryMcrN/S5fhh/m86XSmGhyG+H3qGiItV7YwGEZzSWizwIfObSvOieBP7SNXZNKbzi2rzKmWtQIe/yDhhiPDfMix2ngVcdrqsgxpDrKlH7gAos3ooMVol8GXslxXVV4mYD5+V7gWxZfROfeLFSEYey3v2kIJXIL2fIXhTGFg1UROuokoA/Zvlt1ob8ElroIY8EGJItVVaEnUVYjheBhbKruNViKPAM86qiFOTvxn3TSYCVyE9mFVkr243dDkQYLkRvIyQmlZhf+HiMafIs8TQmP+OnECH5ekBp8ijyJvG+6ijuBz+keoU9hWGyj2lGUkyngTaR+eDv56t/6gDuQlOTSrI8m4vcKZNXnYEE/28iH17NIwqirGSb8QSoaGwceMBx3FHqRA1VCpVivZxeQX4K2gKgr6UcG+RvhBf4TOah7hfUgy0QN2I1slrdcXW8A7wHPsciOnp+PNcgG9rfxc0LBRNbXAeLurP2Psv57kPuQrb9Dma1Hfu6D/L+MdAmZq/+NlM6eQQoOxzNL/x4kkUgkEolEIpFIJDRcBUwhbjlnFlpMAAAAAElFTkSuQmCC"/>
+								</defs>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+								<rect x="6" y="8" width="76" height="78" fill="black"/>
+								<rect x="20" y="20" width="53" height="59" fill="#F80088"/>
+								<rect width="90" height="90" fill="url(#pattern3)"/>
+								<rect x="71" y="16" width="6" height="11" fill="black"/>
+								<rect x="58" y="66" width="19" height="15" fill="black"/>
+								<rect x="18" y="73" width="16" height="8" fill="black"/>
+								<rect x="17" y="69" width="6" height="5" fill="black"/>
+								<defs>
+									<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image3" transform="scale(0.0111111)"/>
+									</pattern>
+									<image id="image3" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+								<rect x="7" y="6" width="76" height="77" fill="black"/>
+								<rect x="61" y="16" width="9" height="12" fill="#F80088"/>
+								<rect x="26" y="23" width="35" height="41" fill="#00C1AE"/>
+								<rect x="55" y="37" width="13" height="17" fill="#00C1AE"/>
+								<rect width="90" height="90" fill="url(#pattern4)"/>
+								<defs>
+									<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image4" transform="scale(0.0111111)"/>
+									</pattern>
+									<image id="image4" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFgklEQVR4nO2d328VRRTHP1eCFxNp1Ccttf5oUCsFVFCs0IT4oNEo8g/4aCJa8M3+CRI0vPmjER4VJNHgj6pVQRN5MCEaMVEbYsXwIAhU0xbB9t62PsxeU/XO7uzuOTt7b+eTnIQMe+ec883u7M7Z2SkEAoFAIBAIBAKBQEmpKPdfBR4AtgLrgNuB64GrgeXKvm3MAn8CZ4CTwHfAUeArYMZTTJm5BxgG/gAWWsR+B14F7lLQQ5z1wIf4Fy2PzQMfYK7A0rEC2AvU8C+UlNWAl6LcSsFq4Fv8C6Nl3wA9YmplZCNwDv9iaNsE0C+kWWruBaYSAmwnmwI2iCiXgtXA+ZyBt6L9BtwqoJ8TKzDjlu+kfdkJ4KrcKjqw10NyZbM9uVVMYC3t9QiX1WqYOYMaH5UgybLYezm1tHI3ZtbkO0FJmwGeBzojG4raXH47j9J0fdiTGJo21CTPoRS/fyW1iglUaa0Ckat1Nsm1M8XvJ4ArXQS8wuUgTKnzGsdjW500pePrgE0uB7oKvTWF81biSce2OB6UCKTBYfxf5ho2gxmTs9wMG/aOi4Cul8kPQK/jsZKMA6PAMWAMOI2pOQB0AN1RXFuAhylweryI74E+qc4uUNxZVgfexNwX0lABNgMHoj6Kivd8yjhjSXs5ZbVRzHvFvPQCnxUU818C8f6DdrCXgKckA454GrhcQPxiaAZ5DvMCQYv70C/piqEp8h2SgVroRVdsMTSCu4TbmdwN7AQ+xjx5XIxsLGobBG506GcTesOIGBrBJY3JXcB+3J4g6sA+YFVCnzuUchFDOrDRBH/bgekM/U4B2xL6PqKQjxiSQdWJf4R7DpjL0f8csCum/zuRf84WQzKoN2L8bCefyIvFjjuz3xLOSQzJoGwzvi6yDRc2m6J5GRTMlL2thf4Je31lv6Cfhr1u8VUBTgn6EUMqoJct/XejU5+oY66UZrwm6CcR13q0FMcs7U8AyxT8LYv6bsaXCv6sFC30mKX9UUWftr5tsahQtNCnLe2adWTbSlBbLCq4Fv6lBvwq5tOG/zKN+dxCg4vASkssUiXORB2LPqN9MO87AChe6GZnFsCvij7PWNo7FH3+j6KF7ra0/6zoc9zSbotFhaKFtr3gHVH0aeu70JfNRQu9xdL+LqY+IU0d+2LEAQV/uZGaQY1jv0PvE/TTsGGLrwrwi6AfMSST32zxsQrZb2ImgRssvgaEcxJDMqgDMX4eQabmMQc8HuPnkHBOYkgGVSf+RrSL/IX/nTH99+Xsv2WEXgA+TfC3jWzDyCTwWEy/FeBzhXzEkA5sAbO4JY5OTD3ZZSipYW58tjG5waBSLmJoBHcZs7gliS7gWczH/D9i6iLT0b9HgGew15wX04+pbSw5oRcwi1qKmDisQXehphhaATbEdlo1n5F+9FfDiqEZ5AJmGNkhGTDmxjeI3nChInRRy3aPYNZd5KUPnaeLZia6bLfIhehzwEFMXSTNhzsVzIzvEPLPyXHmtBC97J9WnAI+wbxIHcPUJ6aj/+sAboriGgAeAm4uPELhTyva9WMhCXvbRUDXMukJx+OWIk7auAr9RfY42p6jLge5jtFVzLu3azOH055MYKb9taQDXc/oGczdPPBvDuIgclracRuJPDaP4iaEIyVIsCx2OKeWsazBrDTynaRvq1HAlpovliBR37Y7t4oOVIGvPSRXFjseaVAIPZjN9nwnXbSdBW4R0C8VG1laW2ZOYvbF9sIGlsaZfRaPIjfoob3H7ON4GC5sVDHbSLbTo98s8AKOu4AVzVrgfVp7BjmPWXQp8aZHnfWYT90m8C+cq12IYlbZc1T7z4MsB+7HbFm2DrgNU+1aib9LchbzlqbZnwcRLxAFAoFAIBAIBAKBQOn5GwkgJZFwhl+rAAAAAElFTkSuQmCC"/>
+								</defs>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="email">
+				<a href="mailto:cutrim@jonathanlacerda.com">
+					cutrim@jonathanlacerda.com
+				</a>
 			</div>
 		</aside>
 		<section class="screen home">
