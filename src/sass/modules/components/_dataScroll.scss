@@ -1,16 +1,12 @@
 /*
 |--------------------------------------------------------------------------
-| Template
+| Data Scrool
 |--------------------------------------------------------------------------
 */
 
-function modules(){
 
-    function init(){
-        
-    }
-
-    return init
+.data-scroll{
+    width: 80%;
+    right: 0;
+    position: absolute;
 }
-
-export default modules
