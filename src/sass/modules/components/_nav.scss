@@ -1,0 +1,40 @@
+/*
+|--------------------------------------------------------------------------
+| Navbar
+|--------------------------------------------------------------------------
+*/
+
+.nav{
+    @include rem(padding-top, 100px);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        max-height: 90px;
+        overflow: hidden;
+
+        li{
+            background-color: $black;
+            max-width: 60px;
+            max-height: 60px;
+            margin: 0 5px;
+
+            a{
+                display: inline-block;
+                height: 100%;
+            }
+
+            svg{
+                width: 100%;
+                max-height: 60px;
+            }
+
+            &:last-child{
+                position: relative;
+                padding-top: 2px;
+            }
+        }
+    }
+}
