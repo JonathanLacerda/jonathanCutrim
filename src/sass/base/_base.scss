@@ -25,7 +25,8 @@ html {
 body{
 	background-color: $color-bg;
 	font-family: $font-main;
-	color: $color-text;
+  color: $color-text;
+  background-image: url('/imagens/noise.png');
 }
 
 .container{

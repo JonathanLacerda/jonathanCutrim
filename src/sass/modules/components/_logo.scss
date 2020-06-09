@@ -6,12 +6,10 @@
 */
 
 .logo{
-    position: absolute;
-    left: 50%;
-    transform: translatex(-42%) scale(0.7);
+    width: 100%;
 
-    @media #{$media-ultra} {
-        transform: translatex(-38%) scale(1);
+    svg{
+        width: 100%;
     }
 }
 
@@ -69,8 +67,5 @@
 }
 
 .logo__dev{
-    position: absolute;
-    right: -4px;
-    bottom: 48px;
     animation-delay: 4s;
 }
