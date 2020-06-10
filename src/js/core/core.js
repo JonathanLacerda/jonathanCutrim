@@ -6,13 +6,14 @@
 
 // Import objects
 
-const anime = require('animejs');
 import smoothScroll from '../modules/smoothScroll'
+import morphBg from '../modules/morphBg'
+
 
 function core(){
 
     function init(){
-        smoothScroll()
+        morphBg()
     }
 
     return {
