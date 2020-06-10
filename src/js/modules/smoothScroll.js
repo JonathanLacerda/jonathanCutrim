@@ -1,4 +1,3 @@
-
 import imagesLoaded from 'imagesloaded'
 
 const math = {
@@ -69,14 +68,7 @@ class Smooth {
   run() {
     this.data.last = math.lerp(this.data.last, this.data.current, this.data.ease)
     this.data.last = Math.floor(this.data.last * 100) / 100
-
-    const diff = this.data.current - this.data.last
-    const acc = diff / config.width
-    const velo =+ acc
-    const skew = velo * 7.5
-
-    this.dom.content.style.transform = `translate3d(0, -${this.data.last.toFixed(2)}px, 0) skewY(${skew}deg)`
-
+    this.dom.content.style.transform = `translate3d(0, -${this.data.last.toFixed(2)}px, 0)`
     this.requestAnimationFrame()
   }
 
@@ -84,13 +76,11 @@ class Smooth {
     this.setStyles()
     this.setHeight()
     this.addEvents()
-
     requestAnimationFrame && this.requestAnimationFrame()
   }
 
   off(cancelAnimationFrame = true) {
     cancelAnimationFrame && this.cancelAnimationFrame()
-
     this.removeEvents()
   }
 
@@ -104,9 +94,7 @@ class Smooth {
 
   destroy() {
     document.body.style.height = ''
-
     this.data = null
-
     this.removeEvents()
     this.cancelAnimationFrame()
   }
