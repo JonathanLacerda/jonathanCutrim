@@ -29,11 +29,7 @@ class Smooth {
       el: document.querySelector('[data-scroll]'),
       content: document.querySelector('[data-scroll-content]')
     }
-
-    console.log(this.dom)
-
     this.rAF = null
-
     this.init()
   }
 
